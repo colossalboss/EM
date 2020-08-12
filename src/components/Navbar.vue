@@ -42,6 +42,18 @@
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
+            <v-list-item router to="/">
+              <v-list-item-icon>
+                <v-icon>mdi-event</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>
+                  <v-icon left>mdi-vote</v-icon>
+                  Results
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
           </v-list>
           <v-list dense nav>
             <v-list-item  router to="/about">
