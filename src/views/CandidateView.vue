@@ -13,7 +13,12 @@
         </v-flex>
         <v-flex>
           <v-card>
-            <v-card-title class="warning">Candidate Info</v-card-title>
+            <v-card-title class="warning">
+              Candidate Info
+              <v-spacer></v-spacer>
+              <v-btn flat class="text-capitalize success">Declare winner</v-btn>
+              </v-card-title>
+            
             <v-card-text>
               <h5>Name</h5>
               <p>Candidate Name</p>

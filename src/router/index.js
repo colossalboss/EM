@@ -8,6 +8,11 @@ import CandidateView from '../views/CandidateView.vue'
 import Elections from '../views/Elections.vue'
 import ElectionDetails from '../views/ElectionDetails.vue'
 import AddPosition from '../views/AddPosition.vue'
+import Dashboard from '../views/Dashboard.vue'
+import ElectionReport from '../views/ElectionReport.vue'
+import Report from '../views/Report.vue'
+import Login from '../views/Login.vue'
+import SetUp from '../views/SetUp.vue'
 
 Vue.use(VueRouter)
 
@@ -18,9 +23,34 @@ Vue.use(VueRouter)
     component: Home
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/setup',
+    name: 'SetUp',
+    component: SetUp
+  },
+  {
     path: '/create-election',
     name: 'CreateElection',
     component: CreateElection
+  },
+  {
+    path: '/report',
+    name: 'Report',
+    component: Report
+  },
+  {
+    path: '/election-report',
+    name: 'ElectionReport',
+    component: ElectionReport
+  },
+  {
+    path: '/board',
+    name: 'Dashboard',
+    component: Dashboard
   },
   {
     path: '/details',

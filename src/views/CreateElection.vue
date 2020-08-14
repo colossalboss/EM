@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-layout justify-center>
-        <v-flex sm4>
+        <v-flex sm5>
           <v-card>
             <v-card-title class="warning white--text">Create Election</v-card-title>
             <v-card-text>

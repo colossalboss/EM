@@ -15,13 +15,13 @@
 
           <v-spacer></v-spacer>
 
-          <v-btn small text color="grey">Sign In</v-btn>
-          <v-btn small text color="grey">
+          <v-btn small text color="grey" to="/board">
             <span>Dashboard</span>
           </v-btn>
+          <v-btn small text color="grey" to="login">Sign In</v-btn>
         </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" app dark color="primary">
+        <v-navigation-drawer v-model="drawer" app dark color="warning">
           <v-container>
             <v-layout column>
               <v-flex sm6 class="logo">
@@ -30,27 +30,58 @@
             </v-layout>
           </v-container>
           <v-list dense nav>
-            <v-list-item router to="/">
+            <v-list-item router to="/board">
               <v-list-item-icon>
-                <v-icon>mdi-event</v-icon>
+                <v-icon>mdi-vote</v-icon>
               </v-list-item-icon>
 
               <v-list-item-content>
                 <v-list-item-title>
-                  <v-icon left>mdi-vote</v-icon>
+                  Dashboard
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item router to="/create-election">
+              <v-list-item-icon>
+                <v-icon>mdi-vote</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>
                   Create Election
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-            <v-list-item router to="/">
+            <v-list-item router to="/elections">
               <v-list-item-icon>
-                <v-icon>mdi-event</v-icon>
+                <v-icon>mdi-vote</v-icon>
               </v-list-item-icon>
 
               <v-list-item-content>
                 <v-list-item-title>
-                  <v-icon left>mdi-vote</v-icon>
+                  Elections
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item router to="/elections">
+              <v-list-item-icon>
+                <v-icon>mdi-vote</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>
                   Results
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item router to="/report">
+              <v-list-item-icon>
+                <v-icon>mdi-vote</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>
+                  Reports
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -58,12 +89,11 @@
           <v-list dense nav>
             <v-list-item  router to="/about">
               <v-list-item-icon>
-                <v-icon>mdi-event</v-icon>
+                <v-icon>mdi-lock</v-icon>
               </v-list-item-icon>
 
               <v-list-item-content>
                 <v-list-item-title>
-                  <v-icon left>mdi-lock</v-icon>
                   Sign Up
                 </v-list-item-title>
               </v-list-item-content>
