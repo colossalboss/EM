@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import CreateElection from '../views/CreateElection.vue'
 import ExpressInterest from '../views/ExpressInterest.vue'
 import CreateInterest from '../views/CreateInterest.vue'
@@ -18,9 +17,9 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
   {
     path: '/login',
